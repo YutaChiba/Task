@@ -10,7 +10,7 @@ import UIKit
 import Parse
 import Bolts
 
-class TaskListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
+class TaskListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate, TaskDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var undoBtn: UIButton?
@@ -24,6 +24,9 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
     
     let showHeight = UIScreen.mainScreen().bounds.size.height - 170
     let hideHeight = UIScreen.mainScreen().bounds.size.height + 170
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +60,11 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewWillAppear(animated: Bool) {
         println(__FUNCTION__)
+        
+        TestManager.getInstance().delegate = self
+        
+        TestManager.getInstance().startWithHello()
+        
         
         // データを取得
         // TODO ネットワークが繋がっていない場合は取りに行かない。
@@ -170,7 +178,9 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
         // Dispose of any resources that can be recreated.
     }
     
-    
+    func sayHello(message: String) {
+        println("これは：\(message)")
+    }
     
     // MARK: - Navigation
 
@@ -187,5 +197,7 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
 
-
 }
+
+
+

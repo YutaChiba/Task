@@ -60,6 +60,8 @@
 		95BC7FF31AFDF88D00AF8D56 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BC7FF21AFDF88D00AF8D56 /* StoreKit.framework */; };
 		95BC7FF51AFDF89B00AF8D56 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BC7FF41AFDF89B00AF8D56 /* libz.dylib */; };
 		95BC7FF71AFDF8B500AF8D56 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BC7FF61AFDF8B500AF8D56 /* SystemConfiguration.framework */; };
+		DB1935F61B15B25D002D6858 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1935F51B15B25D002D6858 /* Test.swift */; };
+		DB1935F81B15B838002D6858 /* TestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1935F71B15B838002D6858 /* TestManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +146,8 @@
 		95BC7FF21AFDF88D00AF8D56 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		95BC7FF41AFDF89B00AF8D56 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		95BC7FF61AFDF8B500AF8D56 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DB1935F51B15B25D002D6858 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		DB1935F71B15B838002D6858 /* TestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,6 +301,8 @@
 				95BC7FBA1AFDF5D400AF8D56 /* Images.xcassets */,
 				95BC7FBC1AFDF5D400AF8D56 /* LaunchScreen.xib */,
 				95BC7FB11AFDF5D400AF8D56 /* Supporting Files */,
+				DB1935F51B15B25D002D6858 /* Test.swift */,
+				DB1935F71B15B838002D6858 /* TestManager.swift */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -527,9 +533,11 @@
 				95294A8F1AFECEC700A657E9 /* TopViewController.swift in Sources */,
 				95294A8D1AFECDD300A657E9 /* TaskListViewController.swift in Sources */,
 				9534E7D41B12178D00A4C9B4 /* TaskViewController.swift in Sources */,
+				DB1935F61B15B25D002D6858 /* Test.swift in Sources */,
 				95BC7FB41AFDF5D400AF8D56 /* AppDelegate.swift in Sources */,
 				95294A8B1AFECD9500A657E9 /* CAPSPageMenu.swift in Sources */,
 				9534E7D71B12351C00A4C9B4 /* Constant.swift in Sources */,
+				DB1935F81B15B838002D6858 /* TestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

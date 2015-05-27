@@ -11,7 +11,7 @@ import Parse
 import Bolts
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate , TaskDelegate  {
 
     var window: UIWindow?
     
@@ -31,6 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
         // TODO ローカルDBとリモートDBの同期処理
+        
+        TestManager.getInstance().delegate = self
         
         return true
     }
